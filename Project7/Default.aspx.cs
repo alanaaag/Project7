@@ -13,5 +13,15 @@ namespace Project7
         {
 
         }
+
+        protected void MemberPageButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Member/Member.aspx");
+        }
+
+        protected void StaffPageButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Staff/Staff.aspx");
+        }
     }
 }
