@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34018.315
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project7", "Project7\Project7.csproj", "{59878264-0D14-4622-9817-A0CA7EFBBA58}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncryptionLibrary", "EncryptionLibrary\EncryptionLibrary.csproj", "{748C18DA-3206-43ED-802B-C9DE79646C25}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{59878264-0D14-4622-9817-A0CA7EFBBA58}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59878264-0D14-4622-9817-A0CA7EFBBA58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59878264-0D14-4622-9817-A0CA7EFBBA58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{748C18DA-3206-43ED-802B-C9DE79646C25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{748C18DA-3206-43ED-802B-C9DE79646C25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{748C18DA-3206-43ED-802B-C9DE79646C25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{748C18DA-3206-43ED-802B-C9DE79646C25}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
