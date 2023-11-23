@@ -1,15 +1,35 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Staff.aspx.cs" Inherits="Project7.Staff.Staff" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Staff.aspx.cs" MasterPageFile="~/Site.Master" Inherits="Project7.Staff.Staff" %>
 
-<!DOCTYPE html>
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+    <main>
+        <h3>View Staff:</h3>
+<p>Click the 'View Staff List' to view the current staff members</p>
+<asp:Button ID="StaffButton" runat="server" Text="View Staff List"/>
+<br />
+<asp:Label ID="StaffResult" runat="server"></asp:Label>
+<hr />
+<h3>Add New Staff </h3>
+<p>Enter staff members credetials, then click 'Add Staff', password will be encrypted</p>
+<table style="width: 100%;">
+    <tr>
+        <td>
+            <asp:Label ID="UserLabel" runat="server" Text="User"></asp:Label>
+        </td>
+        <td>
+            <asp:TextBox ID="StaffUserInput" runat="server"></asp:TextBox>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div>
-        </div>
-    </form>
-</body>
-</html>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <asp:Label ID="PasswordLabel" runat="server" Text="Password"></asp:Label>
+        </td>
+        <td>
+            <asp:TextBox ID="StaffPasswordInput" TextMode="Password" runat="server"></asp:TextBox>
+        </td>
+    </tr>
+</table>
+<asp:Button ID="AddStaffUser" runat="server" Text="Add Staff"/>
+ <asp:Label ID="AddStaffStatus" runat="server"></asp:Label>
+    </main>
+</asp:Content>
