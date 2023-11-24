@@ -82,9 +82,7 @@
                     This library will also be used to verify user/staff login creditials </td>
                 <td>Will be used on the 'Members' and 'Staff' pages, can be tested via TryIt link or Mock Staff page via viewing or adding a staff functionality</td>
                 <td>
-                    <a href="http://webstrar25.fulton.asu.edu/page3/TryIt">TryIt</a><br />
-                    <br />
-                    <a href="http://webstrar25.fulton.asu.edu/page3/Staff">Mockup Staff Page</a>
+                    <a href="http://webstrar25.fulton.asu.edu/page10/TryIt">TryIt</a><br />
                 </td>
             </tr>
             <tr>
@@ -92,9 +90,9 @@
                 <td>XML File</td>
                 <td>Store User and Passwords for Staff</td>
                 <td>Staff data is stored in an xml within the AppData folder</td>
-                <td>Will be used 'Staff' page, can be tested via TryIt link or Mock Staff page via viewing or adding a staff functionality</td>
+                <td>Used on the 'Staff' page, can be tested via Staff page via viewing or adding a staff functionality</td>
                 <td>
-                    <a href="http://webstrar25.fulton.asu.edu/page3/Staff">Mockup Staff Page</a>
+                    <a href="http://webstrar25.fulton.asu.edu/page10/Staff/Staff">Staff Page</a>
                 </td>
             </tr>
             <tr>
@@ -108,22 +106,6 @@
                 </td>
                 <td>* Intergrations with WSDL/RESTful services<br />
                     * Pulls and filters the data needed for # of hours sun is present<br />
-                    https://geocode.maps.co/
-                    <br />
-                    https://api.weather.gov/</td>
-                <td>Will be used on the 'Default' or 'Members' (pending), can be tested via TryIt link</td>
-                <td><a href="http://webstrar25.fulton.asu.edu/page3/TryIt">TryIt</a></td>
-            </tr>
-            <tr>
-                <td>Jay Parker</td>
-                <td>Web Service</td>
-                <td><b>* Average Wind Speed Calculator Service</b><br />
-                    * This service will recieve a zipcode and the average windspeed for the next 7 days based on weather forcast<br />
-                    * Input: string zipCode - Output: string avgWindSpeed
-                </td>
-                <td>* Intergrations with WSDL/RESTful services<br />
-                    * Pulls and filters the data needed for # of hours wind is present
-                    <br />
                     https://geocode.maps.co/
                     <br />
                     https://api.weather.gov/</td>

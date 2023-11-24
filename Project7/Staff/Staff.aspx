@@ -2,9 +2,10 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <main>
+        <asp:Button ID="DefaultPageButton" runat="server" Text="Home" OnClick="DefaultPageButton_Click" /><br /><br />
         <h3>View Staff:</h3>
 <p>Click the 'View Staff List' to view the current staff members</p>
-<asp:Button ID="StaffButton" runat="server" Text="View Staff List"/>
+<asp:Button ID="StaffButton" runat="server" Text="View Staff List" OnClick="StaffButton_Click"/>
 <br />
 <asp:Label ID="StaffResult" runat="server"></asp:Label>
 <hr />
@@ -29,7 +30,7 @@
         </td>
     </tr>
 </table>
-<asp:Button ID="AddStaffUser" runat="server" Text="Add Staff"/>
+<asp:Button ID="AddStaffUser" runat="server" Text="Add Staff" OnClick="AddStaffUser_Click"/>
  <asp:Label ID="AddStaffStatus" runat="server"></asp:Label>
     </main>
 </asp:Content>
