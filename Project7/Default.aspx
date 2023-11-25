@@ -110,7 +110,7 @@
                     <br />
                     https://api.weather.gov/</td>
                 <td>Will be used on the 'Default' or 'Members' (pending), can be tested via TryIt link</td>
-                <td><a href="http://webstrar25.fulton.asu.edu/page3/TryIt">TryIt</a></td>
+                <td><a href="http://webstrar25.fulton.asu.edu/page10/TryIt">TryIt</a></td>
             </tr>
             <tr>
                 <td>Kshitij Dhyani</td>
