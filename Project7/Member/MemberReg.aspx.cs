@@ -134,5 +134,11 @@ namespace Project7.Member
             byte[] captchaImageBytes = CreateCaptchaImage(captchaString);
             CaptchaImage.ImageUrl = "data:image/jpeg;base64," + Convert.ToBase64String(captchaImageBytes);
         }
+
+        protected void MemberRegBackButton_Click(object sender, EventArgs e)
+        {
+            // Redirect to another page
+            Response.Redirect("/Default.aspx");
+        }
     }
 }

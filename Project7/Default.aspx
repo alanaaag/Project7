@@ -7,9 +7,9 @@
         }
     </style>
     <main>
-        <asp:Button ID="MemberLoginButton" runat="server" Text="Member Login" />
+        <asp:Button ID="MemberLoginButton" runat="server" Text="Member Login" OnClick="MemberLoginButton_Click" />
         <asp:Button ID="MemberPageButton" runat="server" Text="Member Page" OnClick="MemberPageButton_Click" />
-        <asp:Button ID="MemberRegistrationButton" runat="server" Text="Member Registration" />
+        <asp:Button ID="MemberRegistrationButton" runat="server" Text="Member Registration" OnClick="MemberRegistrationButton_Click" />
         <asp:Button ID="StaffLoginButton" runat="server" Text="Staff Login" />
         <asp:Button ID="StaffPageButton" runat="server" Text="Staff Page" OnClick="StaffPageButton_Click" />
 

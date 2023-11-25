@@ -11,17 +11,17 @@ namespace Project7.Member
 {
 
 
-    public partial class MemberReg
+    public partial class MemberLogin
     {
 
         /// <summary>
-        /// MemberRegBackButton control.
+        /// MemberLoginBackButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button MemberRegBackButton;
+        protected global::System.Web.UI.WebControls.Button MemberLoginBackButton;
 
         /// <summary>
         /// UserTextBox control.
@@ -42,31 +42,13 @@ namespace Project7.Member
         protected global::System.Web.UI.WebControls.TextBox PasswordTextBox;
 
         /// <summary>
-        /// CaptchaImage control.
+        /// LoginButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image CaptchaImage;
-
-        /// <summary>
-        /// CaptchaTextBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox CaptchaTextBox;
-
-        /// <summary>
-        /// RegisterButton control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button RegisterButton;
+        protected global::System.Web.UI.WebControls.Button LoginButton;
 
         /// <summary>
         /// StatusLabel control.

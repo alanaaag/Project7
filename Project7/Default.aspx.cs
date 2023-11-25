@@ -23,5 +23,17 @@ namespace Project7
         {
             Response.Redirect("Staff/Staff.aspx");
         }
+
+        protected void MemberRegistrationButton_Click(object sender, EventArgs e)
+        {
+            // Redirect to another page
+            Response.Redirect("Member/MemberReg.aspx");
+        }
+
+        protected void MemberLoginButton_Click(object sender, EventArgs e)
+        {
+            // Redirect to another page
+            Response.Redirect("Member/MemberLogin.aspx");
+        }
     }
 }

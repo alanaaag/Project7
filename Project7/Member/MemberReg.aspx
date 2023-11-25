@@ -2,7 +2,10 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <main>
-   <h3>Member Registration</h3>
+    <h3>Member Registration</h3>
+    <asp:Button ID="MemberRegBackButton" runat="server" Text="Back" OnClick="MemberRegBackButton_Click" />
+    <br />
+    <br />
     <p>Enter Username and Password to register as a New Member.</p>
     <br />
         <p>Username: </p>
@@ -12,6 +15,7 @@
         <asp:TextBox ID="PasswordTextBox" runat="server"></asp:TextBox>
     <br />
         <asp:Image ID="CaptchaImage" runat="server" />
+    <br />
     <br />
         <p>Please enter the above text.</p>
         <asp:TextBox ID="CaptchaTextBox" runat="server"></asp:TextBox>
