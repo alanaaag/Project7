@@ -45,10 +45,10 @@
             <li>The newly added user can then access the Staff Page.</li>
             <br>
             <p><b>Default Staff Account:</b></p>
-            <li>A pre-configured staff account exists for the TA/grader/tester.</li>
-            <li>Username: "TA"</li>
-            <li>Password: "Cse44598!"</li>
-        
+                <li>A pre-configured staff account exists for the TA/grader/tester.</li>
+                <li>Username: "TA"</li>
+                <li>Password: "Cse44598!"</li>
+
         </ul>
         <hr />
 
@@ -73,6 +73,26 @@
                 <th>Resources/Methods used to implement component</th>
                 <th>Where component is used</th>
                 <th>Try It Link</th>
+            </tr>
+            <tr>
+                <td>Kshitij/Jay/Alana</td>
+                <td>APSX Page</td>
+                <td>Default Page </td>
+                <td>This page displays the description of the application, vairous buttons for navigation, and Application and Componets Summary </td>
+                <td>The default page is the primary page of the web application</td>
+                <td>
+                    <a href="http://webstrar25.fulton.asu.edu/page10/Default">Default Page</a><br />
+                </td>
+            </tr>
+            <tr>
+                <td>Jay Parker</td>
+                <td>APSX Page</td>
+                <td>Staff Page </td>
+                <td>This page displays the list of users in the Staff.xml  and is used to add new staff to the staff.xml </td>
+                <td>Click the staff page link or staff login to login and redirect to the staff page</td>
+                <td>
+                    <a href="http://webstrar25.fulton.asu.edu/page10/Staff/Staff">Staff Page</a><br />
+                </td>
             </tr>
             <tr>
                 <td>Jay Parker</td>
