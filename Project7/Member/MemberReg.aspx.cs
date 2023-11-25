@@ -17,7 +17,7 @@ namespace Project7.Member
         private const string CaptchaSessionKey = "CaptchaKey";
         protected void Page_Load(object sender, EventArgs e)
         {
-           if(!IsPostBack) // when register button is clicked, entered captcha is compared to new captcha
+           if(!IsPostBack)
             {
                 GenerateAndDisplayCaptcha();
             }
