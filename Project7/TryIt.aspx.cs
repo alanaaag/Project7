@@ -37,5 +37,28 @@ namespace Project7
             // SET RESULTS TO LABLE ON PAGE
             DecyptResult.Text = decryptedValue;
         }
+
+        protected void CalulateHoursOfSunButton_Click(object sender, EventArgs e)
+        {
+            //CREATE SERVICE CLIENT
+            WeatherService.ServiceClient service = new WeatherService.ServiceClient();
+
+            try
+            {
+                // GET INPUT
+                var input = SunZipCodeInput.Text.ToString();
+
+                // CALL SERVICE
+                string result = service.AverageSunCalulation(input);
+
+                // SET RESULT TO HAZARD INDEX RESULT
+                HoursOfSunResultsLabel.Text = result.ToString();
+            }
+            catch (Exception ex)
+            {
+                // IF ERROR OCCURS, DISPLAY ERROR MESSAGE
+                HoursOfSunResultsLabel.Text = "An error has occured, please rety agian.";
+            }
+        }
     }
 }
