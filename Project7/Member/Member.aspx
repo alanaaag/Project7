@@ -22,8 +22,8 @@
           <asp:Label ID="LongLabel" runat="server" Text="Long: "></asp:Label>
           <asp:TextBox ID="LongTextBox" runat="server"></asp:TextBox>
           <br />
-          <asp:Button ID="LatLongButton" runat="server" Text="Get Zip Code" />
-
+          <asp:Button ID="LatLongButton" runat="server" Text="Get Zip Code" OnClick="LatLongButton_Click" />
+          <asp:Label ID="LatLongResultLabel" runat="server" Text="Result:"></asp:Label>
           <hr />
           <asp:Label ID="ZipCodeLabel" runat="server" Text="Zip Code: "></asp:Label>
           <asp:TextBox ID="ZipCodeTextBox" runat="server"></asp:TextBox>
@@ -31,9 +31,18 @@
           <asp:Label ID="NumSolarPanelsLabel" runat="server" Text="Number of Solar Panels: "></asp:Label>
           <asp:TextBox ID="NumSolarPanelsTextBox" runat="server"></asp:TextBox>
           <br />
-          <asp:Button ID="CalculatorButton" runat="server" Text="Calculate Solar Cost Savings" />
-
-
-
+          <asp:Button ID="CalculatorButton" runat="server" Text="Calculate Solar Energy Generated" OnClick="CalculatorButton_Click" />
+          <br />
+          <br />
+          <asp:Label ID="WeatherServiceResultLabel" runat="server" Text="Average number of hours of sun in next 5 days : "></asp:Label>
+          <asp:Label ID="WeatherServiceLabel" runat="server" Text=""></asp:Label>
+          <br />
+          <br />
+          <asp:Label ID="NumberOfSolarPanelResultLabel" runat="server" Text="KwH of Solar Panels : "></asp:Label>
+          <asp:Label ID="NumberOfSolarPanelLabel" runat="server" Text=""></asp:Label>
+          <br />
+          <br />
+          <asp:Label ID="PotentialSolarGeneratedResultLabel" runat="server" Text="Potential Energy generated in next 5 days (KwH) : "></asp:Label>
+          <asp:Label ID="PotentialSolarGeneratedLabel" runat="server" Text=""></asp:Label>
       </main>
     </asp:Content>

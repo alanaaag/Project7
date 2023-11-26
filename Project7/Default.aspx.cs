@@ -27,13 +27,13 @@ namespace Project7
         protected void MemberRegistrationButton_Click(object sender, EventArgs e)
         {
             // Redirect to another page
-            Response.Redirect("Member/MemberReg.aspx");
+            Response.Redirect("/MemberReg.aspx");
         }
 
         protected void MemberLoginButton_Click(object sender, EventArgs e)
         {
             // Redirect to another page
-            Response.Redirect("Member/MemberLogin.aspx");
+            Response.Redirect("/MemberLogin.aspx");
         }
     }
 }

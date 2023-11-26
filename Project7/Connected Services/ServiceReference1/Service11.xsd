@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="EnergyUnitConversion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="energy" type="xs:double" />
+        <xs:element minOccurs="0" name="unit" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EnergyUnitConversionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EnergyUnitConversionResult" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReturnZipByLatLong">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="latString" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="longString" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReturnZipByLatLongResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ReturnZipByLatLongResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReturnAddressFromZip">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="zip" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReturnAddressFromZipResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ReturnAddressFromZipResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

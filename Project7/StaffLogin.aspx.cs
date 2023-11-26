@@ -1,21 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
+using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Xml;
 
-namespace Project7.Member
+namespace Project7.Staff
 {
-    public partial class MemberLogin : System.Web.UI.Page
+    public partial class StaffLogin : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
         }
 
-        protected void MemberLoginBackButton_Click(object sender, EventArgs e)
+        protected void StaffLoginBackButton_Click(object sender, EventArgs e)
         {
             // Redirect to another page
             Response.Redirect("/Default.aspx");
@@ -29,8 +32,8 @@ namespace Project7.Member
             try
             {
                 bool isMatch = false;
-                const string MemberXmlFilePath = "/App_Data/Member.xml";
-                string xmlPath = HttpContext.Current.Server.MapPath(MemberXmlFilePath);
+                const string StaffXmlFilePath = "/App_Data/Staff.xml";
+                string xmlPath = HttpContext.Current.Server.MapPath(StaffXmlFilePath);
 
                 // Load the XML document
                 XmlDocument xmlDoc = new XmlDocument();
@@ -53,9 +56,11 @@ namespace Project7.Member
 
                 if (isMatch)
                 {
+                    FormsAuthentication.SetAuthCookie(username, true);
                     // Redirect to another page
-                    Response.Redirect("/Member/Member.aspx");
-                } else
+                    Response.Redirect("/Staff/Staff.aspx");
+                }
+                else
                 {
                     StatusLabel.Text = "Wrong Credentials, Try Again.";
                 }

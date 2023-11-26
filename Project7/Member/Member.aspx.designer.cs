@@ -60,6 +60,15 @@ namespace Project7.Member
         protected global::System.Web.UI.WebControls.Button LatLongButton;
 
         /// <summary>
+        /// LatLongResultLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LatLongResultLabel;
+
+        /// <summary>
         /// ZipCodeLabel control.
         /// </summary>
         /// <remarks>
@@ -103,5 +112,59 @@ namespace Project7.Member
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button CalculatorButton;
+
+        /// <summary>
+        /// WeatherServiceResultLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label WeatherServiceResultLabel;
+
+        /// <summary>
+        /// WeatherServiceLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label WeatherServiceLabel;
+
+        /// <summary>
+        /// NumberOfSolarPanelResultLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label NumberOfSolarPanelResultLabel;
+
+        /// <summary>
+        /// NumberOfSolarPanelLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label NumberOfSolarPanelLabel;
+
+        /// <summary>
+        /// PotentialSolarGeneratedResultLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label PotentialSolarGeneratedResultLabel;
+
+        /// <summary>
+        /// PotentialSolarGeneratedLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label PotentialSolarGeneratedLabel;
     }
 }
