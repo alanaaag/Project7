@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Security;
@@ -30,12 +31,11 @@ namespace Project7.Member
             try
             {
                 bool isMatch = false;
-                const string MemberXmlFilePath = "/App_Data/Member.xml";
-                string xmlPath = HttpContext.Current.Server.MapPath(MemberXmlFilePath);
-
+                string path = Path.Combine(Request.PhysicalApplicationPath, @"App_Data\Member.xml");
+               
                 // Load the XML document
                 XmlDocument xmlDoc = new XmlDocument();
-                xmlDoc.Load(xmlPath);
+                xmlDoc.Load(path);
 
                 // Find the user node with the specified username
                 XmlNode userNode = xmlDoc.SelectSingleNode($"//Member[User='{username}']");
@@ -56,16 +56,15 @@ namespace Project7.Member
                 {
                     FormsAuthentication.SetAuthCookie(username, true);
                     // Redirect to another page
-                    Response.Redirect("/Member/Member.aspx");
+                    Response.Redirect("page10/Member/Member.aspx");
                 } else
                 {
                     bool isMatchStaff = false;
-                    const string StaffXmlFilePath = "/App_Data/Staff.xml";
-                    string StaffxmlPath = HttpContext.Current.Server.MapPath(StaffXmlFilePath);
+                    string path2 = Path.Combine(Request.PhysicalApplicationPath, @"App_Data\Staff.xml");
 
                     // Load the XML document
                     XmlDocument StaffxmlDoc = new XmlDocument();
-                    StaffxmlDoc.Load(StaffxmlPath);
+                    StaffxmlDoc.Load(path2);
 
                     // Find the user node with the specified username
                     XmlNode userNodeStaff = StaffxmlDoc.SelectSingleNode($"//Member[User='{username}']");
@@ -86,7 +85,7 @@ namespace Project7.Member
                     {
                         FormsAuthentication.SetAuthCookie(username, true);
                         // Redirect to another page
-                        Response.Redirect("/Staff/Staff.aspx");
+                        Response.Redirect("Page10/Staff/Staff.aspx");
                     } else { 
                         StatusLabel.Text = "Wrong Credentials, Try Again.";
                     }
