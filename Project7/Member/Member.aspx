@@ -2,18 +2,18 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
       <main>
+        <asp:Button ID="BackButton" runat="server" Text="Back" OnClick="BackButton_Click" />
         <h1>Member Page</h1>
           <h2>Description</h2>
           <ul>
             <li>If the user needs to get their zip code from their lat/long. They can use the first section of the page to input their lat/long click the submit button and receive their corresponding zip code.</li>
-            <li>To calculate their solar usage savings, The user will enter their zipcode, number of solar panels and they will receive information on the cost of savings the solar array produces that week.</li>
+            <li>To calculate solar usage, The user will enter their zipcode, number of solar panels and they will receive information on the solar energy produced that week.</li>
             <li>Additional information on how that cacluation will be displayed.</li>
           </ul>
           <ul>
               <li>Location Service</li>
               <li>Average Sun Calculator Service</li>
               <li>Average kW/H Service</li>
-              <li>Cost Calculator Service</li>
           </ul>
           <hr />
           <asp:Label ID="LatLabel" runat="server" Text="Lat: ">

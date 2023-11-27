@@ -33,10 +33,9 @@
 
         <h1>Application Description</h1>
         <h2>Energy Calculator Web Service</h2>
-        <p>This web application service provides an energy-related calculation and utility to assist users in making informed decisions about their energy consumption and cost.</p>
-        <p>The calucation/utility service uses the following componets to calculate energy cost savings based on solar weather conditions, capacity of solar array and current electricy cost based on location provided.</p>
+        <p>This web application service provides an energy-related calculation and utility to assist users in making informed decisions about their energy consumption.</p>
+        <p>The calucation/utility service uses solar weather conditions and capacity of solar array based on location provided to cacluate energy generated.</p>
         <p>Please navigate to the member page to utilize this utility or navigate to the member registration to sign up.</p>
-        <hr />
 
         <h1>Application Testing Instructions</h1>
         <br>
@@ -50,7 +49,7 @@
         <h2>Member Page</h2>
         <ul>
             <li>If the user needs to get their zip code from their lat/long. They can use the first section of the page to input their lat/long click the submit button and receive their corresponding zip code.</li>
-            <li>To calculate their solar usage savings, The user will enter their zipcode, number of solar panels and they will receive information on the cost of savings the solar array produces that week.</li>
+            <li>To calculate solar usage, The user will enter their zipcode, number of solar panels and they will receive information on the solar energy produced that week.</li>
             <li>Additional information on how that cacluation will be displayed.</li>
         </ul>
         <br />
@@ -236,18 +235,19 @@
             </tr>
 
             <tr>
-    <td>Alana Gregorio</td>
-    <td>ASPX Page</td>
-    <td>Member Registration Page</td>
-    <td>Gets username & password from user and requires CAPTCHA verification.<br />
-    Checks if user exists in Member.xml and adds user and encrypted password if it doesn't.<br />
-    Input: string username, string password, string captcha<br />
-    Output: string registrationStatus</td>
-    <td>Will be on 'Default' page</td>
-    <td>
-        <a href="http://webstrar25.fulton.asu.edu/page10/Default">TryIt</a><br /><br />
-    </td>
-</tr>
+                <td>Alana Gregorio</td>
+                <td>ASPX Page</td>
+                <td>Member Registration Page</td>
+                <td>Gets username & password from user and requires CAPTCHA verification.<br />
+                    Checks if user exists in Member.xml and adds user and encrypted password if it doesn't.<br />
+                    Input: string username, string password, string captcha<br />
+                    Output: string registrationStatus</td>
+                <td>Will be on 'Default' page</td>
+                <td>
+                    <a href="http://webstrar25.fulton.asu.edu/page10/Default">TryIt</a><br />
+                    <br />
+                </td>
+            </tr>
         </table>
 
     </main>

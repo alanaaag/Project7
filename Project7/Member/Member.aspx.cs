@@ -20,8 +20,14 @@ namespace Project7.Member
         protected void LatLongButton_Click(object sender, EventArgs e)
         {
             ServiceReference1.Service1Client energyUnitConversion = new ServiceReference1.Service1Client();
+            try { 
             string address = energyUnitConversion.ReturnZipByLatLong(LatTextBox.Text, LongTextBox.Text).ToString();
             LatLongResultLabel.Text = "Answer: " + address;
+            } catch(Exception ex)
+            {
+                // IF ERROR OCCURS, DISPLAY ERROR MESSAGE
+                LatLongResultLabel.Text = "An error has occured, please retry agian.";
+            }
         }
 
         protected void CalculatorButton_Click(object sender, EventArgs e)
@@ -51,8 +57,13 @@ namespace Project7.Member
             catch (Exception ex)
             {
                 // IF ERROR OCCURS, DISPLAY ERROR MESSAGE
-                WeatherServiceLabel.Text = "An error has occured, please retry agian.";
+                PotentialSolarGeneratedLabel.Text = "An error has occured, please retry agian.";
             }
+        }
+
+        protected void BackButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/Default.aspx");
         }
     }
 }
