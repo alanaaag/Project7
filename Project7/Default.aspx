@@ -10,8 +10,26 @@
         <asp:Button ID="MemberLoginButton" runat="server" Text="Member Login" OnClick="MemberLoginButton_Click" />
         <asp:Button ID="MemberPageButton" runat="server" Text="Member Page" OnClick="MemberPageButton_Click" />
         <asp:Button ID="MemberRegistrationButton" runat="server" Text="Member Registration" OnClick="MemberRegistrationButton_Click" />
-        <asp:Button ID="StaffLoginButton" runat="server" Text="Staff Login" />
+        <asp:Button ID="StaffLoginButton" runat="server" Text="Staff Login" OnClick="StaffLoginButton_Click" />
         <asp:Button ID="StaffPageButton" runat="server" Text="Staff Page" OnClick="StaffPageButton_Click" />
+
+        <br />
+        <br />
+
+        <h4>Base config through Global.asax</h4>
+
+        <br />
+
+        <asp:Label ID="BaseConfigOne" runat="server" Text="Label"></asp:Label>
+        <br />
+        <asp:Label ID="BaseConfigTwo" runat="server" Text="Label"></asp:Label>
+        <br />
+        <asp:Label ID="BaseConfigThree" runat="server" Text="Label"></asp:Label>
+        <br />
+        <asp:Label ID="BaseConfigFour" runat="server" Text="Label"></asp:Label>
+
+        <br />
+        <br />
 
         <h1>Application Description</h1>
         <h2>Energy Calculator Web Service</h2>
@@ -134,10 +152,30 @@
             </tr>
             <tr>
                 <td>Kshitij Dhyani</td>
+                <td>APSX Page & User Acess Control</td>
+                <td>Member Login</td>
+                <td>This page asks for user credentials for access to memeber page. Reads credentials from member.xml,decryptes and compares the credentials and authenticates the user.</td>
+                <td>The Member Login page is prompted when use wants access to member pages.</td>
+                <td>
+                    <a href="http://webstrar25.fulton.asu.edu/page10/MemberLogin">Member Login</a><br />
+                </td>
+            </tr>
+            <tr>
+                <td>Kshitij Dhyani</td>
+                <td>APSX Page & User Acess Control</td>
+                <td>Staff Login</td>
+                <td>This page asks for user credentials for access to Staff page. Reads credentials from Staff.xml,decryptes and compares the credentials and authenticates the user.</td>
+                <td>The Staff Login page is prompted when use wants access to Staff pages.</td>
+                <td>
+                    <a href="http://webstrar25.fulton.asu.edu/page10/MemberLogin">Staff Login</a><br />
+                </td>
+            </tr>
+            <tr>
+                <td>Kshitij Dhyani</td>
                 <td>Event Handler in Global.asax File</td>
                 <td>Sets application-wide settings and variables in the Global.asax file. These settings can be accessed by all parts of your application.</td>
                 <td>This uses the Application_Start event handler in the Global.asax file to set application-wide configurations.</td>
-                <td>This code will be used with 'Public', 'Member' and 'Staff' pages to provide base configuration settings to the web application.</td>
+                <td>This code is being used with 'Default' page to provide base configuration settings to the web application.</td>
                 <td>
                     <a href="http://webstrar25.fulton.asu.edu/page2/">Test</a><br />
                     <br />
@@ -146,9 +184,9 @@
             <tr>
                 <td>Kshitij Dhyani</td>
                 <td>Cookie and Session State Storage</td>
-                <td>Stores Light and Dark Theme perference for user as a cookie, and notification perference as a session state.</td>
+                <td>Sets cookies and session storage on Default page load.</td>
                 <td>This uses the Session State Storage and Cookies provided by the Request.Cookies collection in ASP.NET</td>
-                <td>This code will be used with 'Public', 'Member' and 'Staff' pages to provide user preferences stored as cookies or session storage.</td>
+                <td>Used in the Default.aspx.cs file where cookie stores information about porject, and session state stores session start time.</td>
                 <td>
                     <a href="http://webstrar25.fulton.asu.edu/page2/">Test</a><br />
                     <br />
@@ -157,23 +195,7 @@
             <tr>
                 <td>Kshitij Dhyani</td>
                 <td>Web Service</td>
-                <td>Energy in kW to convert to MW or Enter Energy in MW to convert to kW - Energy Service - Give energy in converted unit (kW/MW)</td>
-                <td>https://www.rapidtables.com/convert/power/kw-to-megaw.html</td>
-                <td>Will be used on the 'Default' or 'Members' (pending), can be tested via TryIt link</td>
-                <td><a href="http://webstrar25.fulton.asu.edu/page2/">TryIt</a></td>
-            </tr>
-            <tr>
-                <td>Kshitij Dhyani</td>
-                <td>Web Service</td>
                 <td>Get Zip and Address based on Latitude and Longitude - Geo Coding - Energy Service - Get address based on Lat/Long</td>
-                <td>https://geocode.maps.co/</td>
-                <td>Will be used on the 'Default' or 'Members' (pending), can be tested via TryIt link</td>
-                <td><a href="http://webstrar25.fulton.asu.edu/page2/">TryIt</a></td>
-            </tr>
-            <tr>
-                <td>Kshitij Dhyani</td>
-                <td>Web Service</td>
-                <td>Get Full address based on Zip - Reverse Geo Coding - Energy Service - Get Full address based on Zip</td>
                 <td>https://geocode.maps.co/</td>
                 <td>Will be used on the 'Default' or 'Members' (pending), can be tested via TryIt link</td>
                 <td><a href="http://webstrar25.fulton.asu.edu/page2/">TryIt</a></td>

@@ -2,11 +2,11 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <main>
-    <h3>Member Login</h3>
+    <h3>Login Authentication</h3>
     <asp:Button ID="MemberLoginBackButton" runat="server" Text="Back" OnClick="MemberLoginBackButton_Click" />
     <br />
     <br />
-    <p>Enter Username and Password to Login as a New Member.</p>
+    <p>Enter Username and Password to access the page.</p>
     <br />
         <p>Username: </p>
         <asp:TextBox ID="UserTextBox" runat="server"></asp:TextBox>

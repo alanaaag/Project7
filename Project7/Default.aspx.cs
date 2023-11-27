@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Project7.Member;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -11,7 +13,28 @@ namespace Project7
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            // Access application-wide variable
+            string SiteName = Application["SiteName"] as string;
+            string maxUsers = Application["maxUsers"] as string;
+            string adminContactEmail = Application["adminContactEmail"] as string;
+            string adminContactPhoneNumber = Application["adminContactPhoneNumber"] as string;
+            string adminName = Application["adminName"] as string;
 
+            Console.WriteLine(Application["SiteName"]);
+
+            BaseConfigOne.Text = "SiteName : " + SiteName;
+            BaseConfigTwo.Text = "maxUsers : " + maxUsers;
+            BaseConfigThree.Text = "adminContactEmail : " + adminContactEmail;
+            BaseConfigFour.Text = "adminContactPhoneNumber : " + adminContactPhoneNumber;
+
+
+            HttpCookie userCookie = new HttpCookie("ProjectTitle");
+            userCookie["ProjectTitle"] = "FinalProject";
+            userCookie.Expires = DateTime.Now.AddHours(48); // Set expiration time
+            Response.Cookies.Add(userCookie);
+
+            // Set a session variable
+            Session["startTime"] = DateTime.Now.ToString();
         }
 
         protected void MemberPageButton_Click(object sender, EventArgs e)
@@ -34,6 +57,12 @@ namespace Project7
         {
             // Redirect to another page
             Response.Redirect("/MemberLogin.aspx");
+        }
+
+        protected void StaffLoginButton_Click(object sender, EventArgs e)
+        {
+            // Redirect to another page
+            Response.Redirect("/StaffLogin.aspx");
         }
     }
 }

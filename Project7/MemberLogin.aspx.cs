@@ -59,7 +59,37 @@ namespace Project7.Member
                     Response.Redirect("/Member/Member.aspx");
                 } else
                 {
-                    StatusLabel.Text = "Wrong Credentials, Try Again.";
+                    bool isMatchStaff = false;
+                    const string StaffXmlFilePath = "/App_Data/Staff.xml";
+                    string StaffxmlPath = HttpContext.Current.Server.MapPath(StaffXmlFilePath);
+
+                    // Load the XML document
+                    XmlDocument StaffxmlDoc = new XmlDocument();
+                    StaffxmlDoc.Load(StaffxmlPath);
+
+                    // Find the user node with the specified username
+                    XmlNode userNodeStaff = StaffxmlDoc.SelectSingleNode($"//Member[User='{username}']");
+
+                    if (userNodeStaff != null)
+                    {
+                        // Get the stored encrypted password for the user
+                        string storedEncryptedPassword = userNodeStaff.SelectSingleNode("Password").InnerText;
+
+                        // Decrypt the stored password
+                        string decryptedPassword = EncryptionLibrary.Cryptography.decryptData(storedEncryptedPassword);
+
+                        // Compare the decrypted password with the entered password
+                        isMatchStaff = password == decryptedPassword;
+                    }
+
+                    if (isMatchStaff)
+                    {
+                        FormsAuthentication.SetAuthCookie(username, true);
+                        // Redirect to another page
+                        Response.Redirect("/Staff/Staff.aspx");
+                    } else { 
+                        StatusLabel.Text = "Wrong Credentials, Try Again.";
+                    }
                 }
 
             }
