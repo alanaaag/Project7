@@ -94,5 +94,10 @@ namespace Project7
             // Redirect to another page
             Response.Redirect("/Member/Member.aspx");
         }
+
+        protected void TryItPageButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/TryIt.aspx");
+        }
     }
 }

@@ -76,9 +76,6 @@
                 </td>
             </tr>
             <tr>
-                <td><b>This page is at: <a href="http://webstrar25.fulton.asu.edu/index.html">http://webstrar25.fulton.asu.edu/index.html</a> </b></td>
-            </tr>
-            <tr>
                 <td>Percentage of contribution: <b>Kshitij</b> : 33.33%, <b>Jay</b> : 33.33%, <b>Alana</b>: 33.33% </td>
             </tr>
         </table>
@@ -98,7 +95,7 @@
                 <td>This page displays the description of the application, vairous buttons for navigation, and Application and Componets Summary </td>
                 <td>The default page is the primary page of the web application</td>
                 <td>
-                    <a href="http://webstrar25.fulton.asu.edu/page10/Default">Default Page</a><br />
+                  <asp:Button ID="DefaultPageTestButton" runat="server" Text="Default Page" OnClick="TableDefaultLoginButtonKshitij_Click" />
                 </td>
             </tr>
             <tr>
@@ -108,7 +105,7 @@
                 <td>This page displays the list of users in the Staff.xml  and is used to add new staff to the staff.xml </td>
                 <td>Click the staff page link or staff login to login and redirect to the staff page</td>
                 <td>
-                    <a href="http://webstrar25.fulton.asu.edu/page10/Staff/Staff">Staff Page</a><br />
+                    <asp:Button ID="StaffPageTestButton" runat="server" Text="Staff Page" OnClick="StaffPageButton_Click" />
                 </td>
             </tr>
             <tr>
@@ -119,7 +116,7 @@
                     This library will also be used to verify user/staff login creditials </td>
                 <td>Will be used on the 'Members' and 'Staff' pages, can be tested via TryIt link or Mock Staff page via viewing or adding a staff functionality</td>
                 <td>
-                    <a href="http://webstrar25.fulton.asu.edu/page10/TryIt">TryIt</a><br />
+                    <asp:Button ID="TryItPageButton" runat="server" Text="Try It" OnClick="TryItPageButton_Click"  />
                 </td>
             </tr>
             <tr>
@@ -129,7 +126,7 @@
                 <td>Staff data is stored in an xml within the AppData folder</td>
                 <td>Used on the 'Staff' page, can be tested via Staff page via viewing or adding a staff functionality</td>
                 <td>
-                    <a href="http://webstrar25.fulton.asu.edu/page10/Staff/Staff">Staff Page</a>
+                    <asp:Button ID="StaffPageTest2Button" runat="server" Text="Staff Page" OnClick="StaffPageButton_Click" />
                 </td>
             </tr>
             <tr>
@@ -147,7 +144,7 @@
                     <br />
                     https://api.weather.gov/</td>
                 <td>Will be used on the 'Default' or 'Members' (pending), can be tested via TryIt link</td>
-                <td><a href="http://webstrar25.fulton.asu.edu/page10/TryIt">TryIt</a></td>
+                <td><asp:Button ID="TryIt2PageButton" runat="server" Text="Try It" OnClick="TryItPageButton_Click"  /></td>
             </tr>
             <tr>
                 <td>Kshitij Dhyani</td>
@@ -208,7 +205,7 @@
                 <td>
                     <a href="http://webstrar25.fulton.asu.edu/page6/TryIt">TryIt</a><br />
                     <br />
-                    <a href="http://webstrar25.fulton.asu.edu/page6/Member">Mockup Member Page</a>
+                    <asp:Button ID="MemberResgirationTestPage" runat="server" Text="Member Registration" OnClick="MemberRegistrationButton_Click" />
                 </td>
             </tr>
             <tr>
@@ -244,8 +241,7 @@
                     Output: string registrationStatus</td>
                 <td>Will be on 'Default' page</td>
                 <td>
-                    <a href="http://webstrar25.fulton.asu.edu/page10/Default">TryIt</a><br />
-                    <br />
+                    <asp:Button ID="MemberRegistrationPageButton" runat="server" Text="Member Registration" OnClick="MemberRegistrationButton_Click" />
                 </td>
             </tr>
         </table>

@@ -96,6 +96,51 @@ namespace Project7
         protected global::System.Web.UI.WebControls.Label BaseConfigFour;
 
         /// <summary>
+        /// DefaultPageTestButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button DefaultPageTestButton;
+
+        /// <summary>
+        /// StaffPageTestButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button StaffPageTestButton;
+
+        /// <summary>
+        /// TryItPageButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button TryItPageButton;
+
+        /// <summary>
+        /// StaffPageTest2Button control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button StaffPageTest2Button;
+
+        /// <summary>
+        /// TryIt2PageButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button TryIt2PageButton;
+
+        /// <summary>
         /// TableMemberLoginButtonKshitij control.
         /// </summary>
         /// <remarks>
@@ -139,5 +184,23 @@ namespace Project7
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button TableMemberPageButtonKshitij;
+
+        /// <summary>
+        /// MemberResgirationTestPage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button MemberResgirationTestPage;
+
+        /// <summary>
+        /// MemberRegistrationPageButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button MemberRegistrationPageButton;
     }
 }
