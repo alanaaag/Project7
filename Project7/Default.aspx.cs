@@ -62,7 +62,7 @@ namespace Project7
         protected void StaffLoginButton_Click(object sender, EventArgs e)
         {
             // Redirect to another page
-            Response.Redirect("/StaffLogin.aspx");
+            Response.Redirect("/MemberLogin.aspx");
         }
     }
 }

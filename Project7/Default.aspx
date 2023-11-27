@@ -157,7 +157,7 @@
                 <td>This page asks for user credentials for access to memeber page. Reads credentials from member.xml,decryptes and compares the credentials and authenticates the user.</td>
                 <td>The Member Login page is prompted when use wants access to member pages.</td>
                 <td>
-                    <a href="http://webstrar25.fulton.asu.edu/page10/MemberLogin">Member Login</a><br />
+                    <a href="http://webstrar25.fulton.asu.edu/page10/MemberLogin.aspx">Member Login</a><br />
                 </td>
             </tr>
             <tr>
@@ -167,7 +167,7 @@
                 <td>This page asks for user credentials for access to Staff page. Reads credentials from Staff.xml,decryptes and compares the credentials and authenticates the user.</td>
                 <td>The Staff Login page is prompted when use wants access to Staff pages.</td>
                 <td>
-                    <a href="http://webstrar25.fulton.asu.edu/page10/MemberLogin">Staff Login</a><br />
+                    <a href="http://webstrar25.fulton.asu.edu/page10/MemberLogin.aspx">Staff Login</a><br />
                 </td>
             </tr>
             <tr>
@@ -177,7 +177,7 @@
                 <td>This uses the Application_Start event handler in the Global.asax file to set application-wide configurations.</td>
                 <td>This code is being used with 'Default' page to provide base configuration settings to the web application.</td>
                 <td>
-                    <a href="http://webstrar25.fulton.asu.edu/page2/">Test</a><br />
+                    <a href="http://webstrar25.fulton.asu.edu/page10/Default.aspx">Default Page</a><br />
                     <br />
                 </td>
             </tr>
@@ -188,7 +188,7 @@
                 <td>This uses the Session State Storage and Cookies provided by the Request.Cookies collection in ASP.NET</td>
                 <td>Used in the Default.aspx.cs file where cookie stores information about porject, and session state stores session start time.</td>
                 <td>
-                    <a href="http://webstrar25.fulton.asu.edu/page2/">Test</a><br />
+                    <a href="http://webstrar25.fulton.asu.edu/page10/CookieSessionTryIt.aspx">Try It</a><br />
                     <br />
                 </td>
             </tr>
@@ -197,8 +197,10 @@
                 <td>Web Service</td>
                 <td>Get Zip and Address based on Latitude and Longitude - Geo Coding - Energy Service - Get address based on Lat/Long</td>
                 <td>https://geocode.maps.co/</td>
-                <td>Will be used on the 'Default' or 'Members' (pending), can be tested via TryIt link</td>
-                <td><a href="http://webstrar25.fulton.asu.edu/page2/">TryIt</a></td>
+                <td>Being used in 'Members' page, can see functionality through TryIt link, or see actual implementation on member page</td>
+                <td>
+                      <a href="http://webstrar25.fulton.asu.edu/page10/Member/Member.aspx">Member Page</a>
+                </td>
             </tr>
             <tr>
                 <td>Alana Gregorio</td>
