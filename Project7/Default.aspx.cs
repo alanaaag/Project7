@@ -64,5 +64,35 @@ namespace Project7
             // Redirect to another page
             Response.Redirect("/MemberLogin.aspx");
         }
+
+        protected void TableMemberLoginButtonKshitij_Click(object sender, EventArgs e)
+        {
+            // Redirect to another page
+            Response.Redirect("/MemberLogin.aspx");
+        }
+
+        protected void TableStaffLoginButtonKshitij_Click(object sender, EventArgs e)
+        {
+            // Redirect to another page
+            Response.Redirect("/MemberLogin.aspx");
+        }
+
+        protected void TableDefaultLoginButtonKshitij_Click(object sender, EventArgs e)
+        {
+            // Redirect to another page
+            Response.Redirect("/Default.aspx");
+        }
+
+        protected void TableCookieAndSessionTryItPageButton_Click(object sender, EventArgs e)
+        {
+            // Redirect to another page
+            Response.Redirect("/CookieSessionTryIt.aspx");
+        }
+
+        protected void TableMemberPageButtonKshitij_Click(object sender, EventArgs e)
+        {
+            // Redirect to another page
+            Response.Redirect("/Member/Member.aspx");
+        }
     }
 }

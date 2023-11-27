@@ -94,5 +94,50 @@ namespace Project7
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label BaseConfigFour;
+
+        /// <summary>
+        /// TableMemberLoginButtonKshitij control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button TableMemberLoginButtonKshitij;
+
+        /// <summary>
+        /// TableStaffLoginButtonKshitij control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button TableStaffLoginButtonKshitij;
+
+        /// <summary>
+        /// TableDefaultLoginButtonKshitij control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button TableDefaultLoginButtonKshitij;
+
+        /// <summary>
+        /// TableCookieAndSessionTryItPageButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button TableCookieAndSessionTryItPageButton;
+
+        /// <summary>
+        /// TableMemberPageButtonKshitij control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button TableMemberPageButtonKshitij;
     }
 }

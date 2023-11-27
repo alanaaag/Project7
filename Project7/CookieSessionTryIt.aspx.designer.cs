@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Project7
+namespace Project7.Cookie
 {
 
 

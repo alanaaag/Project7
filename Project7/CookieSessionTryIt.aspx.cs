@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection.Emit;
 using System.Web;
+using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Xml;
 
-namespace Project7
+namespace Project7.Cookie
 {
     public partial class CookieSessionTryIt : System.Web.UI.Page
     {
@@ -24,7 +25,7 @@ namespace Project7
         protected void getSessionStorageDataButton_Click(object sender, EventArgs e)
         {
             // Get the session variable
-            SessionStorageDataLabel.Text = Session["notifications"] as string;
+            SessionStorageDataLabel.Text = Session["startTime"] as string;
         }
     }
 }

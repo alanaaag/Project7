@@ -157,7 +157,7 @@
                 <td>This page asks for user credentials for access to memeber page. Reads credentials from member.xml,decryptes and compares the credentials and authenticates the user.</td>
                 <td>The Member Login page is prompted when use wants access to member pages.</td>
                 <td>
-                    <a href="http://webstrar25.fulton.asu.edu/page10/MemberLogin.aspx">Member Login</a><br />
+                    <asp:Button ID="TableMemberLoginButtonKshitij" runat="server" Text="Member Login" OnClick="TableMemberLoginButtonKshitij_Click" />
                 </td>
             </tr>
             <tr>
@@ -167,7 +167,7 @@
                 <td>This page asks for user credentials for access to Staff page. Reads credentials from Staff.xml,decryptes and compares the credentials and authenticates the user.</td>
                 <td>The Staff Login page is prompted when use wants access to Staff pages.</td>
                 <td>
-                    <a href="http://webstrar25.fulton.asu.edu/page10/MemberLogin.aspx">Staff Login</a><br />
+                    <asp:Button ID="TableStaffLoginButtonKshitij" runat="server" Text="Staff Login" OnClick="TableStaffLoginButtonKshitij_Click" />
                 </td>
             </tr>
             <tr>
@@ -177,8 +177,7 @@
                 <td>This uses the Application_Start event handler in the Global.asax file to set application-wide configurations.</td>
                 <td>This code is being used with 'Default' page to provide base configuration settings to the web application.</td>
                 <td>
-                    <a href="http://webstrar25.fulton.asu.edu/page10/Default.aspx">Default Page</a><br />
-                    <br />
+                    <asp:Button ID="TableDefaultLoginButtonKshitij" runat="server" Text="Default Page" OnClick="TableDefaultLoginButtonKshitij_Click" />
                 </td>
             </tr>
             <tr>
@@ -188,8 +187,7 @@
                 <td>This uses the Session State Storage and Cookies provided by the Request.Cookies collection in ASP.NET</td>
                 <td>Used in the Default.aspx.cs file where cookie stores information about porject, and session state stores session start time.</td>
                 <td>
-                    <a href="http://webstrar25.fulton.asu.edu/page10/CookieSessionTryIt.aspx">Try It</a><br />
-                    <br />
+                    <asp:Button ID="TableCookieAndSessionTryItPageButton" runat="server" Text="Cookie and Session Try It" OnClick="TableCookieAndSessionTryItPageButton_Click" />
                 </td>
             </tr>
             <tr>
@@ -199,7 +197,7 @@
                 <td>https://geocode.maps.co/</td>
                 <td>Being used in 'Members' page, can see functionality through TryIt link, or see actual implementation on member page</td>
                 <td>
-                      <a href="http://webstrar25.fulton.asu.edu/page10/Member/Member.aspx">Member Page</a>
+                    <asp:Button ID="TableMemberPageButtonKshitij" runat="server" Text="Member Page" OnClick="TableMemberPageButtonKshitij_Click" />
                 </td>
             </tr>
             <tr>
