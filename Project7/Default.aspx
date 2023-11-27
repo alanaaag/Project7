@@ -234,6 +234,20 @@
                     <br />
                 </td>
             </tr>
+
+            <tr>
+    <td>Alana Gregorio</td>
+    <td>ASPX Page</td>
+    <td>Member Registration Page</td>
+    <td>Gets username & password from user and requires CAPTCHA verification.<br />
+    Checks if user exists in Member.xml and adds user and encrypted password if it doesn't.<br />
+    Input: string username, string password, string captcha<br />
+    Output: string registrationStatus</td>
+    <td>Will be on 'Default' page</td>
+    <td>
+        <a href="http://webstrar25.fulton.asu.edu/page10/Default">TryIt</a><br /><br />
+    </td>
+</tr>
         </table>
 
     </main>
