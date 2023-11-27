@@ -17,6 +17,7 @@ namespace Project7.Member
         private const string CaptchaSessionKey = "CaptchaKey";
         protected void Page_Load(object sender, EventArgs e)
         {
+            //generate captcha 
            if(!IsPostBack)
             {
                 GenerateAndDisplayCaptcha();
@@ -24,22 +25,26 @@ namespace Project7.Member
         }
         protected void RegisterButton_Click(object sender, EventArgs e)
         {
+            //gets username and password from user
             string username = UserTextBox.Text.Trim();
             string password = PasswordTextBox.Text.Trim();
 
+            //gets entered captcha to verify
             string enteredCaptcha = CaptchaTextBox.Text.Trim();
             string captchaString  = Session[CaptchaSessionKey] as string;
 
             //encrypt password
             var encryptPassword = EncryptionLibrary.Cryptography.encryptData(password);
 
+            //makes sure username/password is not empty
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
                 StatusLabel.Text = "Please Enter Valid Username/Password.";
                 StatusLabel.ForeColor = Color.Red;
                 return;
             }
-
+            
+            //if captcha entered is incorrect, send error
             if (!string.Equals(enteredCaptcha, captchaString, StringComparison.Ordinal))
             {
                 StatusLabel.Text = "The Input Does Not Match the Given Text. Try Again";
@@ -47,12 +52,14 @@ namespace Project7.Member
                 GenerateAndDisplayCaptcha();
                 return;
             }
-                
+                //create XML file path to Member.xml
                 string xmlFilePath = Server.MapPath("~/App_Data/Member.xml");
                 XDocument xmlDoc = XDocument.Load(xmlFilePath);
 
                 bool userExists = xmlDoc.Descendants("Member")
                                             .Any(member => member.Element("User").Value == username);
+
+            //if user exists, send error
                 if (userExists)
                 {
                     UserTextBox.Text = string.Empty;
@@ -61,7 +68,7 @@ namespace Project7.Member
                     StatusLabel.ForeColor = Color.Red;
                     RefreshCaptcha();
                 }
-                else
+                else  //if user does not exist, username/password is added to Member.xml
                 {
                     xmlDoc.Root.Add(new XElement("Member",
                         new XElement("User", username),
@@ -74,10 +81,11 @@ namespace Project7.Member
 
                     StatusLabel.Text = "Registration Successful!";
                     StatusLabel.ForeColor = Color.Green;
-                    //redirect?
+                    //redirect
+                    Response.Redirect("/Member/Member.aspx");
                 }
         }
-            private string GenerateRandomString(int length)
+            private string GenerateRandomString(int length)     //generate captcha string
             {
                 const string chars = "abcdefghijkmnopqrstuvwxyzABCDEFGHJKLMNOPQRSTUVWXYZ0123456789,!%#$@+=-";
                 Random random = new Random();
@@ -86,7 +94,7 @@ namespace Project7.Member
             return captcha.Trim();
             }
 
-        private byte[] CreateCaptchaImage(string inputString)
+        private byte[] CreateCaptchaImage(string inputString)       //create captcha image
         {
             int mapWidth = inputString.Length * 25;
             Bitmap bitmap = new Bitmap(mapWidth, 40);
@@ -119,7 +127,7 @@ namespace Project7.Member
             }
         }
 
-        private void RefreshCaptcha()
+        private void RefreshCaptcha()       //captcha regenerates if input is wrong
         {
             captchaString = GenerateRandomString(8);
             byte[] captchaImageBytes = CreateCaptchaImage(captchaString);
@@ -127,7 +135,7 @@ namespace Project7.Member
             CaptchaTextBox.Text = string.Empty;
         }
 
-        private void GenerateAndDisplayCaptcha()
+        private void GenerateAndDisplayCaptcha() //generate and display captcha to page
         {
             string captchaString = GenerateRandomString(8);
             Session[CaptchaSessionKey] = captchaString;
@@ -137,7 +145,7 @@ namespace Project7.Member
 
         protected void MemberRegBackButton_Click(object sender, EventArgs e)
         {
-            // Redirect to another page
+            // Redirect to default page
             Response.Redirect("/Default.aspx");
         }
     }
