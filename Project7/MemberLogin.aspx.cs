@@ -56,7 +56,7 @@ namespace Project7.Member
                 {
                     FormsAuthentication.SetAuthCookie(username, true);
                     // Redirect to another page
-                    Response.Redirect("page10/Member/Member.aspx");
+                    Response.Redirect("/Member/Member.aspx");
                 } else
                 {
                     bool isMatchStaff = false;
@@ -85,7 +85,7 @@ namespace Project7.Member
                     {
                         FormsAuthentication.SetAuthCookie(username, true);
                         // Redirect to another page
-                        Response.Redirect("Page10/Staff/Staff.aspx");
+                        Response.Redirect("/Staff/Staff.aspx");
                     } else { 
                         StatusLabel.Text = "Wrong Credentials, Try Again.";
                     }
